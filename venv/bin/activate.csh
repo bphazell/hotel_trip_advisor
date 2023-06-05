@@ -8,7 +8,7 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
-setenv VIRTUAL_ENV "/Users/brianhazell/Desktop/NucampFolder/Python/3-DevOps/final_project/final_project2/venv"
+setenv VIRTUAL_ENV "/Users/brianhazell/Desktop/trip_advisor_test/hotel_trip_advisor/venv"
 
 set _OLD_VIRTUAL_PATH="$PATH"
 setenv PATH "$VIRTUAL_ENV/bin:$PATH"

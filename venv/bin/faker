@@ -1,4 +1,4 @@
-#!/Users/brianhazell/Desktop/NucampFolder/Python/2-SQL/final_project2/venv/bin/python
+#!/Users/brianhazell/Desktop/trip_advisor_test/hotel_trip_advisor/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
