@@ -10,7 +10,9 @@ def create_app(test_config=None):
     app.config.from_mapping(
         SECRET_KEY='dev',
         # SQLALCHEMY_DATABASE_URI='postgresql://postgres@localhost:5432/hotel_trip_advisor',
-        SQLALCHEMY_DATABASE_URI='postgresql://postgres@pg:5432/hotel_trip_advisor',
+        # SQLALCHEMY_DATABASE_URI='postgresql://postgres@pg:5432/hotel_trip_advisor',
+        SQLALCHEMY_DATABASE_URI='postgresql://'+os.getenv('DATABASE_USER')+':'+os.getenv(
+            'DATABASE_PASSWORD')+'@'+os.getenv('DATABASE_HOST')+':5432/'+os.getenv('DATABASE_NAME'),
         SQLALCHEMY_TRACK_MODIFICATIONS=False,
         SQLALCHEMY_ECHO=True
     )
